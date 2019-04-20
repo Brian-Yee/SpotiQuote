@@ -105,7 +105,7 @@ def _say_memo(memo, valid_voices, voice="alex"):
     Says a memo for a user to reflect on.
 
     If `...` is present in the memo a pause is inserted. If a speaker is detected by the
-    pattern [v=[a-z]*]
+    pattern [v=[a-z]*], the speaker is changed.
 
     Arguments:
         memo: str
