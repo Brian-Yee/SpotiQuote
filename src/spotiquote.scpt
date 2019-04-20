@@ -33,15 +33,14 @@ on run argv
         end if
 
         -- build json of current Spotify state
-        set info to "{" 
-        set info to info & "\"track\": \"" & trackName & "\""
-        set info to info & ", \"artist\": \"" & trackArtist & "\""
-        set info to info & ", \"player_state\": \"" & playerState & "\""
-        set info to info & ", \"duration\": " & trackDuration
-        set info to info & ", \"position\": " & trackPosition
-        set info to info & ", \"volume\": " & currentVolume
-        set info to info & ", \"advertisement\": " & advertisement
-        set info to info & "}" 
+        set info to "" 
+        set info to info & "track:"         & trackName     & "\n"
+        set info to info & "artist:"        & trackArtist   & "\n"
+        set info to info & "player_state:"  & playerState   & "\n"
+        set info to info & "duration:"      & trackDuration & "\n"
+        set info to info & "position:"      & trackPosition & "\n"
+        set info to info & "volume:"        & currentVolume & "\n"
+        set info to info & "advertisement:" & advertisement & "\n"
         
     end tell
 

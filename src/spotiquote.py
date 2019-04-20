@@ -4,7 +4,6 @@
 Library containing the main functionality of Spotiquote
 """
 import random
-import json
 import time
 import re
 import subprocess
@@ -47,13 +46,17 @@ def main(volume, memos_fpath, default_voice, valid_voices, after_num_plays):
     while True:
         stdout = subprocess.check_output(
             ["osascript", "src/spotiquote.scpt", str(non_zero_volume)]
-        ).decode("utf-8")
-        spotify_state = json.loads(stdout)
+        ).decode("utf-8").strip()
+
+        spotify_state = dict(x.split(':', 1) for x in stdout.split('\n'))
+        spotify_state['volume'] = int(spotify_state['volume'])
+        for key in ('duration', 'position'):
+            spotify_state[key] = float(spotify_state[key])
 
         if spotify_state["player_state"] == "stopped":
             continue
 
-        if not spotify_state["advertisement"]:
+        if spotify_state["advertisement"] == "false":
             if memos and spotify_state["duration"] - spotify_state["position"] < 5:
                 completed_songs |= set([spotify_state["track"]])
             elif (
