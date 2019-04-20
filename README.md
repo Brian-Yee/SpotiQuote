@@ -59,7 +59,7 @@ Memo files should put one memo per line and use `...` to enforce a `2` second pa
 A speaker can be selected by writing `[v={SPEAKER}]` where `{SPEAKER}` is a case-insensitive name.
 To see a list of speakers available on your machine run `say -v "?"` in a command.
 Different speakers are optimized for different languages.
-For example, `Kyoko` is optimized for Japanese while `samantha` is optimized for US accented english.
+For example, `Kyoko` is optimized for Japanese while `Samantha` is optimized for US accented english.
 Thus a file to used space repetition looks like.
 
 ```
