@@ -23,24 +23,24 @@ run.default:
 
 run.programmer:
 	python SpotiQuote.py \
-    --memos memos/programmer_adages.txt
+	  --memos memos/programmer_adages.txt
 
 run.japanese:
 	python SpotiQuote.py \
-    --memos memos/japanese.txt \
-    --voice samantha
+	  --memos memos/japanese.txt \
+	  --voice samantha
 
 run.buddhism:
 	python SpotiQuote.py \
-    --memos memos/buddhist_quotes.txt \
-    --voice moira \
-    --after_num_plays 1
+	  --memos memos/buddhist_quotes.txt \
+	  --voice moira \
+	  --after_num_plays 1
 
 run.cognitive:
 	python SpotiQuote.py \
-    --memos memos/list_of_cognitive_biases.txt \
-    --voice daniel \
-    --after_num_plays 1
+	  --memos memos/list_of_cognitive_biases.txt \
+	  --voice daniel \
+	  --after_num_plays 1
 
 # CORE ]--------------------------------------------------------------------------------------------
 .PHONY: test clean deps
