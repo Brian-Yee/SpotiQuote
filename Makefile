@@ -16,7 +16,7 @@ help:
 	@echo "deps             Install dependencies."
 
 # EXAMPLES ]----------------------------------------------------------------------------------------
-.PHONY: run.default run.japanese run.buddhism
+.PHONY: run.default run.programmer run.japanese run.buddhism run.cognitive
 
 run.default:
 	python SpotiQuote.py
