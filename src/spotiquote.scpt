@@ -32,7 +32,7 @@ on run argv
             end if
         end if
 
-        -- build json of current Spotify state
+        -- build key-value string
         set info to "" 
         set info to info & "track:"         & trackName     & "\n"
         set info to info & "artist:"        & trackArtist   & "\n"
