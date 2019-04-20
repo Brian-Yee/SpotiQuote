@@ -1,14 +1,10 @@
 # SpotiQuote
 
-----
-
 SpotiQuote is a Python3 CLI automatic ad silencer for Spotify on Mac.
 To fill in the silence a user can have random quotes/memos read to them by Mac's `say` command.
 Additionally one can have quotes/memos read to them after every `n` played songs, where a song played is defined as reaching the last `5` seconds.
 
 # Installation
-
-----
 
 ## Manual installation
 
@@ -17,8 +13,6 @@ Dependencies for running are all standard `python` install modules.
 For development [`black`](https://github.com/ambv/black) and [`pylint`](https://github.com/PyCQA/pylint).
 
 # Overview
-
-----
 
 Output of `make help` is
 
@@ -60,8 +54,6 @@ optional arguments:
 ```
 
 # Memo Formatting
-
-----
 
 Memo files should put one memo per line and use `...` to enforce a `2` second pause.
 A speaker can be selected by writing `[v={SPEAKER}]` where `{SPEAKER}` is a case-insensitive name.
