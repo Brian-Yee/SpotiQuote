@@ -4,7 +4,7 @@ help.stub: help
 
 help:
 	@echo "help             Display this message."
-	@echo "run.             Run SpotiQuote example in foreground with:"
+	@echo "run.{EXAMPLE}    Run SpotiQuote example in foreground with:"
 	@echo "  default          defaults (no memos, ads silenced)."
 	@echo "  programmer       programmer adages read at the beginning of silenced ads."
 	@echo "  japanese         Japanese word learning example."

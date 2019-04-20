@@ -18,7 +18,7 @@ Output of `make help` is
 
 ```
 help             Display this message.
-run.             Run SpotiQuote example in foreground with:
+run.{EXAMPLE}    Run SpotiQuote example in foreground with:
   default          defaults (no memos, ads silenced).
   programmer       programmer adages read at the beginning of silenced ads.
   japanese         Japanese word learning example.
