@@ -46,6 +46,7 @@ run.cognitive:
 .PHONY: test clean deps
 
 test:
+	black --check .
 	pylint *.py
 
 clean: deps
